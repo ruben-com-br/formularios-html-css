@@ -1,0 +1,140 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Body Styling */
+body {
+  background: #002b36; /* Cores do Solarized Dark */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Alinha o contêiner ao topo */
+  height: 100vh;
+  margin: 0;
+  overflow: auto; /* Permite rolagem */
+}
+
+/* Container Styling */
+.container {
+  background: #073642; /* Cores do Solarized Dark */
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 800px;
+  overflow: auto; /* Permite rolagem interna se necessário */
+  margin-top: 20px; /* Adiciona um pouco de espaço do topo */
+}
+
+/* Theme Switcher Styling */
+.theme-switcher {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.theme-switcher label {
+  color: #93a1a1; /* Cor de texto do Solarized Dark */
+  margin-right: 10px;
+}
+
+.theme-switcher select {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #586e75; /* Cor de borda do Solarized Dark */
+  background: #073642; /* Cores do Solarized Dark */
+  color: #93a1a1; /* Cor de texto do Solarized Dark */
+  outline: none;
+}
+
+/* Form Styling */
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form h2 {
+  color: #93a1a1; /* Cor de texto do Solarized Dark */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Form Row Styling */
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+/* Form Group Styling */
+.form-group {
+  position: relative;
+  flex: 1 1 30%;
+  min-width: 250px;
+}
+
+/* Icon Styling */
+.form-group i {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: #93a1a1; /* Cor de ícone do Solarized Dark */
+}
+
+/* Input, Select, Textarea Styling */
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px 10px 10px 35px;
+  border: 1px solid #586e75; /* Cor de borda do Solarized Dark */
+  border-radius: 5px;
+  background: #073642; /* Cores do Solarized Dark */
+  color: #93a1a1; /* Cor de texto do Solarized Dark */
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #2aa198; /* Cor de foco do Solarized Dark */
+}
+
+/* Button Styling */
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background: #268bd2; /* Cor de fundo do botão do Solarized Dark */
+  color: #fdf6e3; /* Cor de texto do botão do Solarized Dark */
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+  align-self: center;
+  width: 150px;
+}
+
+button:hover {
+  background: #2aa198; /* Cor de fundo do botão em hover do Solarized Dark */
+}
+
+/* Textarea Resize Control */
+textarea {
+  resize: vertical;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .form-row {
+      flex-direction: column;
+  }
+
+  .form-group {
+      min-width: 100%;
+  }
+}

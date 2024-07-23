@@ -1,0 +1,140 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Body Styling */
+body {
+  background: #282a36; /* Cores do Dracula Theme */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Alinha o contêiner ao topo */
+  height: 100vh;
+  margin: 0;
+  overflow: auto; /* Permite rolagem */
+}
+
+/* Container Styling */
+.container {
+  background: #44475a; /* Cores do Dracula Theme */
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 800px;
+  overflow: auto; /* Permite rolagem interna se necessário */
+  margin-top: 20px; /* Adiciona um pouco de espaço do topo */
+}
+
+/* Theme Switcher Styling */
+.theme-switcher {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.theme-switcher label {
+  color: #f8f8f2; /* Cor de texto do Dracula Theme */
+  margin-right: 10px;
+}
+
+.theme-switcher select {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #6272a4; /* Cor de borda do Dracula Theme */
+  background: #44475a; /* Cores do Dracula Theme */
+  color: #f8f8f2; /* Cor de texto do Dracula Theme */
+  outline: none;
+}
+
+/* Form Styling */
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form h2 {
+  color: #f8f8f2; /* Cor de texto do Dracula Theme */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Form Row Styling */
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+/* Form Group Styling */
+.form-group {
+  position: relative;
+  flex: 1 1 30%;
+  min-width: 250px;
+}
+
+/* Icon Styling */
+.form-group i {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: #f8f8f2; /* Cor de ícone do Dracula Theme */
+}
+
+/* Input, Select, Textarea Styling */
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px 10px 10px 35px;
+  border: 1px solid #6272a4; /* Cor de borda do Dracula Theme */
+  border-radius: 5px;
+  background: #44475a; /* Cores do Dracula Theme */
+  color: #f8f8f2; /* Cor de texto do Dracula Theme */
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #bd93f9; /* Cor de foco do Dracula Theme */
+}
+
+/* Button Styling */
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background: #bd93f9; /* Cor de fundo do botão do Dracula Theme */
+  color: #282a36; /* Cor de texto do botão do Dracula Theme */
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+  align-self: center;
+  width: 150px;
+}
+
+button:hover {
+  background: #6272a4; /* Cor de fundo do botão em hover do Dracula Theme */
+}
+
+/* Textarea Resize Control */
+textarea {
+  resize: vertical;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .form-row {
+      flex-direction: column;
+  }
+
+  .form-group {
+      min-width: 100%;
+  }
+}

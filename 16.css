@@ -1,0 +1,329 @@
+/* Estilos gerais do body */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #a2c2e8, #f5f5f5);
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* Container do formulário */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Estilos do seletor de tema */
+.theme-switcher {
+  margin-bottom: 20px;
+}
+
+.theme-switcher label {
+  font-size: 1.1rem;
+  margin-right: 10px;
+}
+
+#theme-select {
+  font-size: 1rem;
+  padding: 8px;
+  border: 2px solid #333;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+#theme-select:hover {
+  border-color: #007bff;
+}
+
+/* Estilos do formulário */
+.form {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  max-width: 600px;
+  width: 100%;
+  animation: fadeIn 1s ease-out;
+}
+
+/* Estilos dos títulos */
+.form h2 {
+  margin-top: 0;
+  font-size: 2rem;
+  color: #333;
+  text-align: center;
+}
+
+/* Estilos das linhas do formulário */
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+/* Estilos dos grupos de inputs */
+.form-group {
+  position: relative;
+  flex: 1;
+  margin-right: 10px;
+}
+
+/* Estilos dos inputs e selects */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+  width: calc(100% - 40px);
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+  outline: none;
+}
+
+/* Estilos dos ícones */
+.form-group i {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #007bff;
+}
+
+/* Estilos dos botões */
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* Estilos das animações */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Estilo para o fundo do formulário com animação */
+.form {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(0, 123, 255, 0.1));
+  animation: backgroundAnimation 5s infinite alternate;
+}
+
+@keyframes backgroundAnimation {
+  0% {
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(0, 123, 255, 0.1));
+  }
+  100% {
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(0, 123, 255, 0.3));
+  }
+}
+/* Estilos gerais do body */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #a0c4ff, #b9fbc0); /* Gradiente de azul claro para verde claro */
+  color: #333;
+  overflow-x: hidden;
+  background-attachment: fixed;
+}
+
+/* Container do formulário */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Estilos do seletor de tema */
+.theme-switcher {
+  margin-bottom: 20px;
+}
+
+.theme-switcher label {
+  font-size: 1.2rem;
+  margin-right: 10px;
+  color: #005f73;
+}
+
+#theme-select {
+  font-size: 1rem;
+  padding: 8px;
+  border: 2px solid #005f73;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: #ffffff;
+}
+
+#theme-select:hover {
+  border-color: #0a9396;
+}
+
+/* Estilos do formulário */
+.form {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  max-width: 700px;
+  width: 100%;
+  animation: fadeIn 1s ease-out;
+  position: relative;
+}
+
+/* Estilos dos títulos */
+.form h2 {
+  margin-top: 0;
+  font-size: 2.5rem;
+  color: #005f73;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Estilos das linhas do formulário */
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+/* Estilos dos grupos de inputs */
+.form-group {
+  position: relative;
+  flex: 1;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+/* Estilos dos inputs e selects */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+  width: calc(100% - 40px);
+  padding: 12px 40px 12px 40px;
+  border: 2px solid #cce5ff;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: #eaf6ff;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #0a9396;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+  outline: none;
+  animation: pulse 1s infinite;
+}
+
+/* Estilos dos ícones */
+.form-group i {
+  position: absolute;
+  left: 12px;
+  color: #005f73;
+  transition: color 0.3s ease;
+}
+
+input:focus + i,
+select:focus + i,
+textarea:focus + i {
+  color: #0a9396;
+}
+
+/* Estilos dos botões */
+button {
+  background: #0a9396;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #005f73;
+  transform: translateY(-3px);
+}
+
+/* Estilos das animações */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+      box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+  }
+  50% {
+      box-shadow: 0 0 12px rgba(0, 123, 255, 0.5);
+  }
+  100% {
+      box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+  }
+}
+
+/* Estilo para o fundo do formulário com animação */
+.form {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(0, 123, 255, 0.1));
+  animation: backgroundAnimation 6s infinite alternate;
+}
+
+@keyframes backgroundAnimation {
+  0% {
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(0, 123, 255, 0.1));
+  }
+  100% {
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(0, 123, 255, 0.2));
+  }
+}
